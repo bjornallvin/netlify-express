@@ -5,8 +5,8 @@ const serverless = require("serverless-http");
 const app = express();
 const bodyParser = require("body-parser");
 
-var jsonServer = require("json-server");
-app.use("/api", jsonServer.router(path.resolve(__dirname, "db.json")));
+//var jsonServer = require("json-server");
+//app.use("/api", jsonServer.router(path.resolve(__dirname, "db.json")));
 
 const router = express.Router();
 router.get("/", (req, res) => {
